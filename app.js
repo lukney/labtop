@@ -12,10 +12,10 @@ var connection = mysql.createConnection({
   password : '7276947408', //mysql database password
   database : 'super', //mysql database name
   port     : '3306'*/
-host     : 'localhost', //mysql database host name
-  user     : 'root', //mysql database user name
-  password : '', //mysql database password
-  database : 'chat', //mysql database name
+host     : 'sangeetha.cyelmj7smxyj.us-east-1.rds.amazonaws.com', //mysql database host name
+  user     : 'sangeetha', //mysql database user name
+  password : '9886979896', //mysql database password
+  database : 'sangeetha', //mysql database name
 port : '3306'   
 });
 
@@ -36,7 +36,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 var server = app.listen(3008,   function () {
 
   //var host = 'ec2-18-221-18-150.us-east-2.compute.amazonaws.com'
-  var host = server.address().address
+  var host = 'ec2-user@ec2-52-70-73-41.compute-1.amazonaws.com'
   var port = server.address().port
 
   console.log("Example app listening at http://%s:%s", host, port)
